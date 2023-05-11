@@ -1,0 +1,29 @@
+name-template: 'Release $NEXT_PATCH_VERSION 🚢'
+tag-template: '$NEXT_PATCH_VERSION'
+categories:
+  - title: '🚀 Features'
+    label: 'feature'
+  - title: '🐛 Bug Fixes'
+    label: 'fix'
+  - title: '🧰 Maintenance'
+    label: 'chore'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+autolabeler:
+  - label: 'migration'
+    body:
+      - '/migrate/'
+      - '/Migration/'
+  - label: 'reindex'
+    body:
+      - '/reindex/'
+  - label: 'fix'
+    branch:
+      - '/fix\/.+/'
+  - label: 'feature'
+    branch:
+      - '/feature\/.+/'
+      - '/feat\/.+/'
+template: |
+  ## Changes
+
+  $CHANGES
