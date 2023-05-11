@@ -12,7 +12,6 @@ autolabeler:
   - label: 'migration'
     body:
       - '/migrate/'
-      - '/Migration/'
   - label: 'reindex'
     body:
       - '/reindex/'
